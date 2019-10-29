@@ -1,0 +1,24 @@
+.nav {
+  position: fixed;
+  width: 100vw;
+  background: #00000051;
+  border: 1px solid red;
+}
+
+.container {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link {
+  font-family: southland;
+  font-size: 1.4rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.logoLink {
+  width: 6rem;
+}

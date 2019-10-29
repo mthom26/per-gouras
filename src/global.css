@@ -1,0 +1,23 @@
+@font-face {
+  font-family: southland;
+  src: url('./assets/fonts/southlandjfregular.ttf');
+}
+
+body {
+  background-color: #212529;
+  color: #ffffff;
+}
+
+h1 {
+  font-family: southland;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
