@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import { Link } from 'gatsby';
 
 import NavButton from './NavButton';
@@ -13,12 +13,18 @@ const Nav = () => {
     <nav className={styles.nav}>
       <NavButton navOpen={navOpen} toggleNav={() => setNavOpen(!navOpen)} />
       <div className={styles.container}>
-        <Link className={styles.link} to="#">about</Link>
-        <Link className={styles.logoLink} to="#"><img src={logo} alt="" /></Link>
-        <Link className={styles.link} to="#">contact</Link>
+        <Link className={styles.link} to="#">
+          about
+        </Link>
+        <Link className={styles.logoLink} to="#">
+          <img src={logo} alt="" />
+        </Link>
+        <Link className={styles.link} to="#">
+          contact
+        </Link>
       </div>
     </nav>
-  )
-}
+  );
+};
 
 export default Nav;
