@@ -2,7 +2,6 @@
   position: fixed;
   width: 100vw;
   background: #00000051;
-  border: 1px solid red;
 }
 
 .container {
@@ -16,9 +15,40 @@
 .link {
   font-family: southland;
   font-size: 1.4rem;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  margin: 0 2rem;
+  opacity: 0.85;
 }
 .logoLink {
   width: 6rem;
+  opacity: 0.85;
+}
+.link:hover, .logoLink:hover {
+  opacity: 1.0;
+}
+
+@media (max-width: 650px) {
+  .nav {
+    height: 100vh;
+    background: #000000c9;
+    transition: transform 300ms ease-in-out;
+  }
+
+  .container {
+    height: 100%;
+    flex-direction: column;
+    /* border: 1px solid cyan; */
+  }
+
+  .navHidden {
+    transform: translateX(-100%);
+  }
+
+  .logoLink {
+    order: -1;
+    margin: 1rem 0;
+  }
+
+  .link {
+    margin: 1rem 2rem;
+  }
 }
