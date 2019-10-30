@@ -1,0 +1,30 @@
+.footer {
+  padding: 0.8rem;
+  background: #191b1e;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  margin: 0.8rem;
+  width: 8rem;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+}
+
+.icons a {
+  margin: 0.8rem;
+  opacity: 0.85;
+}
+
+.icons a:hover {
+  opacity: 1.0;
+}
