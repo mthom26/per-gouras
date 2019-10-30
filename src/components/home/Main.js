@@ -1,14 +1,13 @@
 import React from 'react';
 
+import LogoAnim from './LogoAnim';
+
 import styles from './Main.module.css';
-import logo from '../../assets/images/pergouras.svg';
 
 const Main = () => {
   return (
     <div className={styles.main}>
-      <div className={styles.logo}>
-        <img src={logo} alt="Per Gouras logo" />
-      </div>
+      <LogoAnim />
     </div>
   );
 };

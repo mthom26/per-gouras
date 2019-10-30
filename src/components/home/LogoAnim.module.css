@@ -1,0 +1,50 @@
+.logo {
+  width: 500px;
+  margin-bottom: 8rem;
+}
+
+.path {
+  stroke-dasharray: 2600;
+  stroke-dashoffset: 2600;
+  stroke-width: 30;
+  animation: basic-anim 2.8s linear forwards;
+}
+.path_e_1 {
+  animation-delay: 0.25s;
+}
+.path_r_1 {
+  animation-delay: 0.5s;
+}
+.path_g_1 {
+  animation-delay: 0.75s;
+}
+.path_o_1 {
+  animation-delay: 1.0s;
+}
+.path_u_1 {
+  animation-delay: 1.25s;
+}
+.path_r_2 {
+  animation-delay: 1.5s;
+}
+.path_a_1 {
+  animation-delay: 1.75s;
+}
+.path_s_1 {
+  animation-delay: 2.0s;
+}
+
+@keyframes basic-anim {
+  0% {
+    stroke-dashoffset: 2600;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@media (max-width: 650px) {
+  .logo {
+    padding: 2rem;
+  }
+}
