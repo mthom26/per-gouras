@@ -22,7 +22,7 @@ const Nav = () => {
           <Link className={styles.logoLink} to="#">
             <img src={logo} alt="" />
           </Link>
-          <Link className={styles.link} to="#">
+          <Link className={styles.link} to="/contact">
             contact
           </Link>
         </div>

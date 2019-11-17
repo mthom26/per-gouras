@@ -1,0 +1,26 @@
+.contact {
+  background: linear-gradient(#000000a2, #000000a2), url('../../assets/images/per-gouras-02.jpg');
+  background-size: cover;
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+
+  display: flex;
+}
+
+.details {
+
+}
+
+.form {
+
+}
+
+.inputBlock {
+
+}
