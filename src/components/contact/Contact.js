@@ -18,7 +18,7 @@ const initialFormData = {
 const initialFormStatus = {
   success: false,
   failure: false,
-  loading: false
+  loading: false,
 };
 
 const Contact = () => {
@@ -30,31 +30,30 @@ const Contact = () => {
     setFormData({ ...formData, [target.name]: target.value });
   };
 
-  const submitForm = (event) => {
+  const submitForm = event => {
     event.preventDefault();
 
     setFormStatus({ ...formStatus, loading: true });
 
     return fetch(process.env.GATSBY_AWS_ENDPOINT, {
       method: 'POST',
-      body: JSON.stringify(formData)
+      body: JSON.stringify(formData),
     })
-    .then(response => {
-      // console.log(response);
-      setFormData(initialFormData);
-      setFormStatus({ ...initialFormStatus, success: true });
-    })
-    .catch(err => {
-      // console.log(err);
-      setFormData(initialFormData);
-      setFormStatus({ ...initialFormStatus, failure: true });
-    });
+      .then(response => {
+        // console.log(response);
+        setFormData(initialFormData);
+        setFormStatus({ ...initialFormStatus, success: true });
+      })
+      .catch(err => {
+        // console.log(err);
+        setFormData(initialFormData);
+        setFormStatus({ ...initialFormStatus, failure: true });
+      });
   };
 
   return (
     <div className={styles.contact}>
       <div className={styles.container}>
-        
         <div className={styles.form}>
           <h1>Get In Touch</h1>
           <div className={styles.divider} />
@@ -89,10 +88,7 @@ const Contact = () => {
                 id="message"
               />
             </div>
-            <button
-              onClick={submitForm}
-              className={styles.button}
-            >
+            <button onClick={submitForm} className={styles.button}>
               <span style={{ margin: '0 1rem' }}>Send</span>
               {formStatus.loading && (
                 <img
@@ -106,8 +102,12 @@ const Contact = () => {
             </button>
 
             <div className={styles.formStatus}>
-              {formStatus.success && <span className={styles.formSuccess}>Message Sent!</span>}
-              {formStatus.failure && <span className={styles.formFailure}>Form Not Sent!</span>}
+              {formStatus.success && (
+                <span className={styles.formSuccess}>Message Sent!</span>
+              )}
+              {formStatus.failure && (
+                <span className={styles.formFailure}>Form Not Sent!</span>
+              )}
             </div>
           </form>
         </div>
@@ -116,7 +116,9 @@ const Contact = () => {
           <h1>Contact</h1>
           <div className={styles.divider} />
           <p className={styles.detailsText}>Email</p>
-          <a className={styles.detailsLink} href="mailto:pergouras@gmail.com">pergouras@gmail.com</a>
+          <a className={styles.detailsLink} href="mailto:pergouras@gmail.com">
+            pergouras@gmail.com
+          </a>
           <div className={styles.icons}>
             <a href="http://www.facebook.com/pergouras">
               <img src={fb} width="24px" />
@@ -138,7 +140,6 @@ const Contact = () => {
             </a>
           </div>
         </div>
-
       </div>
     </div>
   );

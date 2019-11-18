@@ -4,11 +4,20 @@
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
 
-require("dotenv").config();
+require('dotenv').config();
 
 module.exports = {
   /* Your site config here */
   plugins: [
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'src',
+        path: `${__dirname}/src/`,
+      },
+    },
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
@@ -18,8 +27,8 @@ module.exports = {
         background_color: '#f7f0eb',
         theme_color: '#a2466c',
         display: 'standalone',
-        icon: 'src/assets/images/icon.svg'
-      }
-    }
-  ]
+        icon: 'src/assets/images/icon.svg',
+      },
+    },
+  ],
 };

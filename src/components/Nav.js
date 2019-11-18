@@ -16,10 +16,10 @@ const Nav = () => {
       <NavButton navOpen={navOpen} toggleNav={() => setNavOpen(!navOpen)} />
       <nav className={navClasses}>
         <div className={styles.container}>
-          <Link className={styles.link} to="#">
+          <Link className={styles.link} to="/about">
             about
           </Link>
-          <Link className={styles.logoLink} to="#">
+          <Link className={styles.logoLink} to="/">
             <img src={logo} alt="" />
           </Link>
           <Link className={styles.link} to="/contact">
