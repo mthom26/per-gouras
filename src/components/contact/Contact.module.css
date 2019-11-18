@@ -1,7 +1,7 @@
 .contact {
   background: linear-gradient(#000000a2, #000000a2), url('../../assets/images/per-gouras-02.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: center 35%;
   width: 100%;
   min-height: 90vh;
   display: flex;
