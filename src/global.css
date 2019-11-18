@@ -21,3 +21,22 @@ a:hover {
   color: #ffffff;
   text-decoration: none;
 }
+
+.contactFormInputBlock label {
+  font-weight: bold;
+}
+
+.contactFormInputBlock input,
+.contactFormInputBlock textarea {
+  background: rgba(0,0,0,0.5);
+  border: none;
+  color: #ffffff;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.contactFormInputBlock input:focus,
+.contactFormInputBlock textarea:focus {
+  outline: none;
+  background: rgba(0,0,0,0.6);
+}
